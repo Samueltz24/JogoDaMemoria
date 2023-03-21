@@ -27,7 +27,7 @@ const CriarCard = (pessonage) => {
    
    frente.style.backgroundImage=`url('../fo/sonic.jpg')`
   
-  traz.style.backgroundImage=`url('../img/sonic/${pessonage}.png')`
+  traz.style.backgroundImage=`url('../img/S/${pessonage}.png')`
    
    card.appendChild(traz)
    card.appendChild(frente)
