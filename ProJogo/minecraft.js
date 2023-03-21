@@ -25,7 +25,7 @@ const CriarCarta = (personage) => {
    const traz =Elementos('div', 'traz face')
    const frente =Elementos('div', 'frente face')
    
-   traz.style.backgroundImage=`url('../img/minecraft/${personage}.png')`
+   traz.style.backgroundImage=`url('../img/Minecraft/${personage}.png')`
    frente.style.backgroundImage=`url('../fo/minecraft.png')`
    
    card.appendChild(traz)
