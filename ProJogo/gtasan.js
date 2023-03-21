@@ -25,7 +25,7 @@ const Cria= (pessonage) =>{
    const traz = Elemento('div', 'face traz')
    const frente = Elemento('div', 'face frente')
 
-   traz.style.backgroundImage=`url('../img/gtasa/${pessonage}.png')`
+   traz.style.backgroundImage=`url('../img/gtas/${pessonage}.png')`
    
    card.appendChild(traz)
    card.appendChild(frente)
