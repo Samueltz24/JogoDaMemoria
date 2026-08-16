@@ -17,12 +17,13 @@ body{
 #primo{
    display: flex;
    flex-wrap: wrap;
+   margin: 0 2%;
 }
 #lua{
    display: none;
 }
 #jogo{
-   flex: 90%;
+   flex: 70%;
 }
 .memo{
    flex: 10%;
@@ -224,6 +225,9 @@ p{
 }
 .pc1{
    display: flex;
+   display: none;
+}
+#ligar{
    display: none;
 }
 @media (min-width: 1025px) {

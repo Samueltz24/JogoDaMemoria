@@ -8,6 +8,7 @@ const card = document.querySelectorAll('.campo')
 const a3 = document.querySelectorAll('.a3')
 const fo = document.getElementById('fo')
 const ava = document.querySelectorAll('.ava')
+const musica = document.getElementById('musica')
 new Glider(document.querySelector('.js-carrocel'), {
   slidesToShow: 2,
   slidesToScroll:1
@@ -116,7 +117,9 @@ function Sol(){
     })
 }
 
+
 function Lua(){
+   let musica = document.getElementById('musica')
    let Sol = document.getElementById('sol')
    let lua = document.getElementById('lua')
    var tupa= document.getElementById('tuu')
@@ -125,7 +128,6 @@ function Lua(){
    nav.style.background='#0B83D4'
    tuturial.style.background='#0CD5F6'
    fo.style.background='#0B19D4'
-   tupa.style.background='#0B83D4'
    card.forEach(elemento => {
         elemento.style.background = '#0B83D4'
     })
@@ -137,6 +139,18 @@ function Lua(){
     })
 }
 
+function Ligarsom(){
+   var ligar = document.getElementById('ligar')
+   musica.pause()
+   desligar.style.display='block'
+   ligar.style.display='none'
+}
+function Desligarsom(){
+   var desligar = document.getElementById('desligar')
+   musica.play()
+   ligar.style.display='block'
+   desligar.style.display='none'
+}
 
 
 
