@@ -7,6 +7,10 @@ const sol = document.querySelector('.sol')
 const body = document.querySelector('body')
 const nav = document.querySelector('nav')
 const footer = document.querySelector('footer')
+const musica = document.getElementById('musica')
+const ligar = document.getElementById('ligar')
+const desligar = document.getElementById('desligar')
+
 const gta5=[
    'sc01','sc02','sc03','sc04','sc05',
    'sc06','sc07','sc08','sc09','sc10'
@@ -113,3 +117,15 @@ sol.addEventListener('click', () => {
    butao.classList.remove('none')
    b.classList.remove('preto')
 })
+
+function L(){
+   
+   musica.pause()
+   desligar.style.display='block'
+   ligar.style.display='none'
+}
+function D(){
+   musica.play()
+   ligar.style.display='block'
+   desligar.style.display='none'
+}

@@ -7,6 +7,10 @@ const sol = document.querySelector('.sol')
 const body = document.querySelector('body')
 const nav = document.querySelector('nav')
 const footer = document.querySelector('footer')
+const musica = document.getElementById('musica')
+const ligar = document.getElementById('ligar')
+const desligar = document.getElementById('desligar')
+
 const gta5=[
    'sim01','sim02','sim03','sim04','sim05',
    'sim06','sim07','sim08','sim09','sim10'
@@ -23,7 +27,7 @@ const CriarCard = (pessonage) => {
    const traz =Elemento('div', 'face traz')
    const frente =Elemento('div', 'face frente')
    
-   frente.style.backgroundImage=`url('../fo/simpsons.png')`
+   frente.style.backgroundImage=`url('../fo/Simpsons.png')`
    
    traz.style.backgroundImage=`url('../img/Simpsons/${pessonage}.png')`
    
@@ -113,3 +117,15 @@ sol.addEventListener('click', () => {
    butao.classList.remove('none')
    b.classList.remove('preto')
 })
+
+function L(){
+   
+   musica.pause()
+   desligar.style.display='block'
+   ligar.style.display='none'
+}
+function D(){
+   musica.play()
+   ligar.style.display='block'
+   desligar.style.display='none'
+}

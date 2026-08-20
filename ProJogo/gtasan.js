@@ -1,13 +1,16 @@
 const gtasa=['f1','f2','f3','f4','f5',
 'f6','f7','f8','f9','f10'
 ]
-
+const traz = new Audio('./audio/Ancient History - Bosley.mp3')
 const b = document.querySelector('.b')
 const butao = document.querySelector('.butao')
 const sol = document.querySelector('.sol')
 const body = document.querySelector('body')
 const nav = document.querySelector('nav')
 const footer = document.querySelector('footer')
+let musica = document.getElementById('musica')
+let ligar = document.getElementById('ligar')
+let desligar = document.getElementById('desligar')
 
 let primeiro=''
 let segundo=''
@@ -26,7 +29,6 @@ const Cria= (pessonage) =>{
    const frente = Elemento('div', 'face frente')
 
    traz.style.backgroundImage=`url('../img/gtas/${pessonage}.png')`
-   
    frente.style.backgroundImage=`url('../fo/gta.png')`
    card.appendChild(traz)
    card.appendChild(frente)
@@ -114,6 +116,16 @@ sol.addEventListener('click', () => {
    b.classList.remove('preto')
 })
 
-
+function L(){
+   
+   musica.pause()
+   desligar.style.display='block'
+   ligar.style.display='none'
+}
+function D(){
+   musica.play()
+   ligar.style.display='block'
+   desligar.style.display='none'
+}
 
 

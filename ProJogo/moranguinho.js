@@ -11,6 +11,9 @@ const sol = document.querySelector('.sol')
 const body = document.querySelector('body')
 const nav = document.querySelector('nav')
 const footer = document.querySelector('footer')
+const musica = document.getElementById('musica')
+const ligar = document.getElementById('ligar')
+const desligar = document.getElementById('desligar')
 
 let primeiro =''
 let segundo =''
@@ -119,3 +122,14 @@ sol.addEventListener('click', () => {
    b.classList.remove('preto')
 })
 
+function L(){
+   
+   musica.pause()
+   desligar.style.display='block'
+   ligar.style.display='none'
+}
+function D(){
+   musica.play()
+   ligar.style.display='block'
+   desligar.style.display='none'
+}
